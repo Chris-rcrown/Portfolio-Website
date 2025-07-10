@@ -229,7 +229,7 @@ const Contact: React.FC = () => {
             className="glass-morphism rounded-lg shadow-lg p-8 shimmer"
             variants={itemVariants}
           >
-            <form ref={formRef} onSubmit={handleSubmit}  className="space-y-6">
+            <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
               <motion.div 
                 className="grid md:grid-cols-2 gap-4"
                 initial={{ opacity: 0, y: 20 }}
