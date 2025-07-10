@@ -43,11 +43,14 @@ const Contact: React.FC = () => {
       emailjs.sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID, // Your EmailJS service ID
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // Your EmailJS template ID
-        formRef.current, // The form element reference
+        formRef.current!, // The form element reference
         {
           publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY
         } // Your EmailJS public key
-      ),
+      ).catch((error) => {
+        console.error('EmailJS error:', error); // Log the specific error
+        throw error; // Re-throw to trigger toast error
+      }),
       // new Promise((resolve, reject) => {
       //   setTimeout(() => {
       //     if (Math.random() > 0.1) { // 90% success rate
@@ -226,7 +229,7 @@ const Contact: React.FC = () => {
             className="glass-morphism rounded-lg shadow-lg p-8 shimmer"
             variants={itemVariants}
           >
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form ref={formRef} onSubmit={handleSubmit}  className="space-y-6">
               <motion.div 
                 className="grid md:grid-cols-2 gap-4"
                 initial={{ opacity: 0, y: 20 }}
@@ -330,8 +333,6 @@ const Contact: React.FC = () => {
                 }}
                 whileTap={{ scale: 0.98 }}
                 viewport={{ once: true }}
-                onSubmit={handleSubmit}
-                ref={formRef}
               >
                 {isSubmitting ? (
                   <>
