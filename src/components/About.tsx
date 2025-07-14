@@ -6,8 +6,20 @@ import toast from 'react-hot-toast';
 const About: React.FC = () => {
   const handleDownloadResume = () => {
     toast.promise(
-      new Promise((resolve) => {
-        setTimeout(() => resolve('success'), 2000);
+      new Promise((resolve, reject) => {
+        try {
+          // Create and trigger download
+          const link = document.createElement('a');
+          link.href = '/OLUWAROTIMI ADEGBORIOYE tech223.pdf'; // Ensure the file is in public/
+          link.download = 'Oluwarotimi-CV.pdf';
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+  
+          setTimeout(() => resolve(), 2000); // Simulate loading time
+        } catch (error) {
+          reject(error);
+        }
       }),
       {
         loading: 'Preparing your resume...',
@@ -16,6 +28,7 @@ const About: React.FC = () => {
       }
     );
   };
+  
 
   const containerVariants = {
     hidden: { opacity: 0 },

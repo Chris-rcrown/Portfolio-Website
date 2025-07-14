@@ -48,11 +48,21 @@ const Hero = () => {
 
   const handleDownloadResume = () => {
     toast.success('Resume download started!');
-    // Simulate download
+  
+    // Create a temporary link to trigger the download
+    const link = document.createElement('a');
+    link.href = '/OLUWAROTIMI ADEGBORIOYE tech223.pdf'; // assuming it's in the public folder
+    link.download = 'Oluwarotimi-CV.pdf'; // set the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  
+    // Optional: fake download success after short delay
     setTimeout(() => {
       toast.success('Resume downloaded successfully!');
     }, 1500);
   };
+  
 
   const containerVariants = {
     hidden: { opacity: 0 },
