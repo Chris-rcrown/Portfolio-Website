@@ -10,13 +10,13 @@ const About: React.FC = () => {
         try {
           // Create and trigger download
           const link = document.createElement('a');
-          link.href = '/OLUWAROTIMI ADEGBORIOYE tech223.pdf'; // Ensure the file is in public/
+          link.href = '/OLUWAROTIMI ADEGBORIOYE tech226.pdf'; // Ensure the file is in public/
           link.download = 'Oluwarotimi-CV.pdf';
           document.body.appendChild(link);
           link.click();
           document.body.removeChild(link);
   
-          setTimeout(() => resolve(), 2000); // Simulate loading time
+          setTimeout(() => resolve(undefined), 2000); // Simulate loading time
         } catch (error) {
           reject(error);
         }
@@ -47,8 +47,7 @@ const About: React.FC = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.6,
-        ease: "easeOut"
+        duration: 0.6
       }
     }
   };
@@ -60,8 +59,7 @@ const About: React.FC = () => {
       scale: 1,
       x: 0,
       transition: {
-        duration: 0.8,
-        ease: "easeOut"
+        duration: 0.8
       }
     }
   };
@@ -123,7 +121,7 @@ const About: React.FC = () => {
                 { icon: MapPin, text: "Lagos, NG", color: "text-blue-600" },
                 { icon: Calendar, text: "3+ Years Experience", color: "text-blue-600" },
                 { icon: Coffee, text: "Code Enthusiast", color: "text-blue-600" }
-              ].map((item, index) => (
+              ].map((item) => (
                 <motion.div 
                   key={item.text}
                   className="flex items-center space-x-2 text-gray-300"
