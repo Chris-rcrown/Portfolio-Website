@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Share2, Instagram, Linkedin, Twitter, Copy, Check } from 'lucide-react';
+import { Share2, Instagram, Linkedin, Twitter, Whatsapp, Copy, Check } from 'lucide-react';
 import toast from 'react-hot-toast';
 
 const SocialShare = () => {
@@ -28,6 +28,9 @@ const SocialShare = () => {
       icon: <Instagram size={20} />,
       url: `https://www.instagram.com/am_rotimi_crown?igsh=MWdsenhudXlqc2t2ZA%3D%3D&utm_source=qr`,
       color: 'bg-pink-600 hover:bg-pink-700'
+    },
+    {
+      name: 
     }
   ];
 
