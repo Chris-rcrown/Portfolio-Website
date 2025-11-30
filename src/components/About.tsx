@@ -1,32 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Download, MapPin, Calendar, Coffee } from 'lucide-react';
-import toast from 'react-hot-toast';
+import { downloadResume } from '../utils/resumeDownload';
 
 const About: React.FC = () => {
   const handleDownloadResume = () => {
-    toast.promise(
-      new Promise((resolve, reject) => {
-        try {
-          // Create and trigger download
-          const link = document.createElement('a');
-          link.href = '/OLUWAROTIMI ADEGBORIOYE tech226.pdf'; // Ensure the file is in public/
-          link.download = 'Oluwarotimi-CV.pdf';
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
-  
-          setTimeout(() => resolve(undefined), 2000); // Simulate loading time
-        } catch (error) {
-          reject(error);
-        }
-      }),
-      {
-        loading: 'Preparing your resume...',
-        success: 'Resume downloaded successfully!',
-        error: 'Failed to download resume',
-      }
-    );
+    downloadResume();
   };
   
 

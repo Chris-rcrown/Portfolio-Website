@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown, Code, Palette, Server, Download } from 'lucide-react';
-import toast from 'react-hot-toast';
+import { downloadResume } from '../utils/resumeDownload';
 
 const Hero = () => {
   const [currentText, setCurrentText] = useState('');
@@ -47,20 +47,7 @@ const Hero = () => {
   };
 
   const handleDownloadResume = () => {
-    toast.success('Resume download started!');
-  
-    // Create a temporary link to trigger the download
-    const link = document.createElement('a');
-    link.href = '/OLUWAROTIMI ADEGBORIOYE tech226.pdf'; // assuming it's in the public folder
-    link.download = 'Oluwarotimi-CV.pdf'; // set the filename
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  
-    // Optional: fake download success after short delay
-    setTimeout(() => {
-      toast.success('Resume downloaded successfully!');
-    }, 1500);
+    downloadResume();
   };
   
 
@@ -81,8 +68,7 @@ const Hero = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.6,
-        ease: "easeOut" // Fix: use string for ease
+        duration: 0.6
       }
     }
   };
@@ -92,8 +78,7 @@ const Hero = () => {
       y: [-10, 10, -10],
       transition: {
         duration: 4,
-        repeat: Infinity,
-        ease: "easeInOut"
+        repeat: Infinity
       }
     }
   };
@@ -110,8 +95,7 @@ const Hero = () => {
           }}
           transition={{
             duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut"
+            repeat: Infinity
           }}
         />
         <motion.div 
@@ -122,8 +106,7 @@ const Hero = () => {
           }}
           transition={{
             duration: 10,
-            repeat: Infinity,
-            ease: "easeInOut"
+            repeat: Infinity
           }}
         />
         <motion.div 
@@ -134,8 +117,7 @@ const Hero = () => {
           }}
           transition={{
             duration: 12,
-            repeat: Infinity,
-            ease: "easeInOut"
+            repeat: Infinity
           }}
         />
       </div>
@@ -273,8 +255,7 @@ const Hero = () => {
             }}
             transition={{
               duration: 2,
-              repeat: Infinity,
-              ease: "easeInOut"
+              repeat: Infinity
             }}
             whileHover={{ scale: 1.2 }}
           >
