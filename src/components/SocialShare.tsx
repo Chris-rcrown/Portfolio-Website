@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Share2, Instagram, Linkedin, Twitter, Whatsapp, Copy, Check } from 'lucide-react';
+import { Share2, Instagram, Linkedin, Twitter, Copy, Check, MessageCircle } from 'lucide-react';
 import toast from 'react-hot-toast';
 
 const SocialShare = () => {
@@ -14,23 +14,26 @@ const SocialShare = () => {
     {
       name: 'LinkedIn',
       icon: <Linkedin size={20} />,
-      url: `https://www.linkedin.com/in/oluwarotimi-adegborioye-17723b156`,
+      url: 'https://www.linkedin.com/in/oluwarotimi-adegborioye-17723b156',
       color: 'bg-blue-600 hover:bg-blue-700'
     },
     {
       name: 'Twitter',
       icon: <Twitter size={20} />,
-      url: `https://x.com/iamrotimi_crown?s=21`,
+      url: 'https://x.com/iamrotimi_crown?s=21',
       color: 'bg-blue-400 hover:bg-blue-500'
     },
     {
       name: 'Instagram',
       icon: <Instagram size={20} />,
-      url: `https://www.instagram.com/am_rotimi_crown?igsh=MWdsenhudXlqc2t2ZA%3D%3D&utm_source=qr`,
+      url: 'https://www.instagram.com/am_rotimi_crown?igsh=MWdsenhudXlqc2t2ZA%3D%3D&utm_source=qr',
       color: 'bg-pink-600 hover:bg-pink-700'
     },
     {
-      name: 
+      name: 'WhatsApp',
+      icon: <MessageCircle size={20} />,
+      url: `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText + ' ' + shareUrl)}`,
+      color: 'bg-green-600 hover:bg-green-700'
     }
   ];
 
@@ -40,7 +43,7 @@ const SocialShare = () => {
       setCopied(true);
       toast.success('Link copied to clipboard!');
       setTimeout(() => setCopied(false), 2000);
-    } catch (err) {
+    } catch {
       toast.error('Failed to copy link');
     }
   };
@@ -81,8 +84,7 @@ const SocialShare = () => {
       y: 0,
       scale: 1,
       transition: {
-        duration: 0.3,
-        ease: "easeOut"
+        duration: 0.3
       }
     }
   };
@@ -99,7 +101,7 @@ const SocialShare = () => {
             animate="visible"
             exit="exit"
           >
-            {shareLinks.map((link, index) => (
+            {shareLinks.map((link) => (
               <motion.button
                 key={link.name}
                 onClick={() => handleShare(link.url, link.name)}
