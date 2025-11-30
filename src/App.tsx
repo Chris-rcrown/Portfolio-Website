@@ -1,13 +1,6 @@
-import React from 'react';
 import { Toaster } from 'react-hot-toast';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import SocialShare from './components/SocialShare';
+import Home from './pages/Home';
+
 import CinematicBackground from './components/CinematicBackground';
 
 function App() {
@@ -15,14 +8,7 @@ function App() {
     <div className="min-h-screen bg-transparent relative">
       <CinematicBackground />
       <div className="relative z-10">
-        <Header />
-        <Hero />
-        <About />
-        <Projects />
-        <Skills />
-        <Contact />
-        <Footer />
-        <SocialShare />
+        <Home/>
       </div>
       <Toaster
         position="top-right"
