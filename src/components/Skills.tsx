@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Code, Palette, Server, Database, Smartphone, Globe } from 'lucide-react';
 
@@ -32,7 +31,8 @@ const Skills = () => {
       skills: [
         { name: 'MongoDB', level: 75 },
         { name: 'Mongoose', level: 70 },
-        { name: 'SQL', level: 65 }
+        { name: 'SQL', level: 65 },
+        { name: "postgressql", level: 70},
       ]
     },
     {
@@ -84,8 +84,7 @@ const Skills = () => {
       y: 0,
       scale: 1,
       transition: {
-        duration: 0.6,
-        ease: "easeOut"
+        duration: 0.6
       }
     }
   };
@@ -96,7 +95,6 @@ const Skills = () => {
       width: `${level}%`,
       transition: {
         duration: 1.5,
-        ease: "easeOut",
         delay: 0.2
       }
     })

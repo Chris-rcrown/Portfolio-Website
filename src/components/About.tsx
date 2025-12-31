@@ -179,7 +179,7 @@ const About: React.FC = () => {
               whileHover={{ scale: 1.1, rotate: -5 }}
               viewport={{ once: true }}
             >
-              <div className="text-2xl font-bold text-purple-600">3+</div>
+              <div className="text-2xl font-bold text-purple-600">{Date.now() - 2022} +</div>
               <div className="text-sm text-gray-300">Years</div>
             </motion.div>
           </motion.div>
