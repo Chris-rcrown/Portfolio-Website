@@ -99,5 +99,25 @@ export const projects: Project[] = [
     liveUrl: 'https://dessert-menu-page.netlify.app/',
     githubUrl: 'https://github.com/Chris-rcrown/product-list-with-cart-main.git',
     featured: false
+  },
+  {
+    id:10,
+    title: 'TEHC Personal Banking App',
+    description: 'A personal banking app that allows users to manage their finances, view transaction history, and perform basic banking operations.',
+    image: '/tehc.jpeg',
+    technologies: ['React', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'AzureDevOps', 'Zustand', 'RESTful API'],
+    liveUrl: 'https://persbankingapp-dev-awarc2cwdth8esds.westeurope-01.azurewebsites.net/',
+    githubUrl: ' ',
+    featured: true
+  },
+  {
+    id:11,
+    title: 'Inkbric',
+    description: 'A collaborative writing platform that enables users to create, edit, and share stories in real-time with other writers.',
+    image: '/inkbrick.png',
+    technologies: ['React','TypeScript', 'Node.js', 'Express', 'Render', 'PostgreSQL', 'Cloudinary', 'Tailwind CSS', 'Swagger/OpenAI API'],
+    liveUrl: 'https://inkbric-full-custom.vercel.app/',
+    githubUrl: '',
+    featured: true
   }
 ];
