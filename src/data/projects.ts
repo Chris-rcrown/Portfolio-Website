@@ -113,9 +113,9 @@ export const projects: Project[] = [
   {
     id:11,
     title: 'Inkbric',
-    description: 'A collaborative writing platform that enables users to create, edit, and share stories in real-time with other writers.',
+    description: 'Full-Stack Architecture: Architected and built "Inkbric," a comprehensive STEM education platform using React 18, Node.js, and PostgreSQL, facilitating seamless interaction between students, parents, and educators. With advanced State Management implemented, it is highly scalable frontend state management using Zustand to handle complex user flows, including a multi-step e-commerce checkout and persistent shopping cart functionality. It has a secure API Design engineered. a robust RESTful API with Express.js featuring strict Role-Based Access Control (RBAC) and JWT authentication to secure sensitive data across four distinct user roles (Student, Parent, Teacher, Admin)',
     image: '/inkbrick.png',
-    technologies: ['React','TypeScript', 'Node.js', 'Express', 'Render', 'PostgreSQL', 'Cloudinary', 'Tailwind CSS', 'Swagger/OpenAI API'],
+    technologies: ['React','TypeScript', 'Node.js', 'Express', 'Render', 'PostgreSQL', 'Cloudinary', 'Tailwind CSS', 'Swagger/OpenAPI'],
     liveUrl: 'https://inkbric-full-custom.vercel.app/',
     githubUrl: '',
     featured: true
