@@ -1,6 +1,6 @@
 import toast from 'react-hot-toast';
 
-const RESUME_PATH = '/OLUWAROTIMI ADEGBORIOYE tech226.pdf';
+const RESUME_PATH = '/OLUWAROTIMI ADEGBORIOYE tech227.pdf';
 const DOWNLOAD_FILENAME = 'Oluwarotimi-CV.pdf';
 
 /**
