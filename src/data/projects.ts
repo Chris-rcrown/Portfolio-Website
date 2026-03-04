@@ -26,7 +26,7 @@ export const projects: Project[] = [
     description: 'Collaborative Full-stack Customized Digital Menu Boards for Restaurants,Generate a scannable QR code for your customers to browse the menu, order and enjoy - while you update everything in real time..',
     image: '/Menuswift.png',
     technologies: ['React', 'TypeScript', 'Micro-Services', 'Nginx', 'Postgress', 'S3 Bucket'],
-    liveUrl: 'https://visit.menu/',
+    liveUrl: 'https://usemenucard.com',
     githubUrl: '#',
     featured: true
   },
