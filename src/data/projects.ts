@@ -133,7 +133,7 @@ export const projects: Project[] = [
   {
     id: 13,
     title: 'ACUOP',
-    description: 'ACUOP; Atlantic City Union Cooperative',
+    description: 'ACUOP; Atlantic City Union Cooperative web application is built with React and TypeScript,for managing cooperative (co-op)  and membership-based financial services. It includes features for user onboarding, account management, loan and mortgage calculations, share purchases, admin dashboards, notifications, and user authentication. There are views for admin and user dashboards, onboarding forms, and financial calculations. it is designed to facilitate cooperative membership processes, financial transactions, and administrative oversight.',
     image: "/Acuop.png",
     technologies: ['React', 'Typescript','PostgreSQL', 'Cloudinary', 'Tailwind CSS', 'Tanstack Query', 'Zustand', 'Zod', 'CI/CD Pipelines'],
     liveUrl: 'https://acuop.com',
