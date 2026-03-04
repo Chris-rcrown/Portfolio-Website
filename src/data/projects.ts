@@ -117,7 +117,7 @@ export const projects: Project[] = [
     image: '/inkbrick.png',
     technologies: ['React','TypeScript', 'Node.js', 'Express', 'Render', 'PostgreSQL', 'Cloudinary', 'Tailwind CSS', 'Swagger/OpenAPI'],
     liveUrl: 'https://inkbric-full-custom.vercel.app/',
-    githubUrl: 'private',
+    githubUrl: '#',
     featured: true
   },
   {
@@ -127,7 +127,7 @@ export const projects: Project[] = [
     image : '/louisville.png',
     technologies: ['React', 'Typescript', 'Nest.js', 'PostgreSQL', 'Cloudinary', 'Tailwind CSS', 'Tanstack Query', 'Zustand', 'Zod', 'CI/CD Pipelines'],
     liveUrl : 'https://marketplace.louisville.tehcoop.com',
-    githubUrl: 'private',
+    githubUrl: '#',
     featured: true,
   },
   {
@@ -137,7 +137,7 @@ export const projects: Project[] = [
     image: "/Acuop.png",
     technologies: ['React', 'Typescript','PostgreSQL', 'Cloudinary', 'Tailwind CSS', 'Tanstack Query', 'Zustand', 'Zod', 'CI/CD Pipelines'],
     liveUrl: 'https://acuop.com',
-    githubUrl: 'private',
+    githubUrl: '#',
     featured: true,
   }
 
