@@ -21,8 +21,11 @@ const Skills = () => {
       skills: [
         { name: 'Node.js', level: 65 },
         { name: 'Express.js', level: 60 },
+        {name: 'ASP.NET Core (C#)', level: 55},
         { name: 'REST APIs', level: 68 },
-        { name: 'Authentication', level: 54 }
+        { name: 'Authentication', level: 54 },
+        { name: 'Nest.js', level: 65 },
+        { name: 'Python', level: 50   }
       ]
     },
     {
@@ -32,7 +35,7 @@ const Skills = () => {
         { name: 'MongoDB', level: 75 },
         { name: 'Mongoose', level: 70 },
         { name: 'SQL', level: 65 },
-        { name: "postgressql", level: 70},
+        { name: "PostgreSQL", level: 85},
       ]
     },
     {
@@ -61,7 +64,9 @@ const Skills = () => {
         { name: 'Git', level: 85 },
         { name: 'Webpack', level: 70 },
         { name: 'Vite', level: 80 },
-        { name: 'npm/yarn', level: 88 }
+        { name: 'npm/yarn', level: 88 },
+        { name: 'CI/CD', level: 60 },
+        { name: 'Azure DevOps', level: 50 }
       ]
     }
   ];

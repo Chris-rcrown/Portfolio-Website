@@ -130,21 +130,21 @@ const About: React.FC = () => {
             </motion.button>
           </motion.div>
 
-          <motion.div 
-            className="relative"
-            variants={imageVariants}
-          >
             <motion.div 
-              className="relative z-10"
+              className="relative w-full"
+              variants={imageVariants}
+            >
+              <motion.div 
+              className="relative z-10 h-[70vh]"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
-            >
+              >
               <img
-                src="/linkedin.jpg"
-                alt="Working on laptop"
-                className="rounded-lg shadow-2xl"
+              src="/Headshot.jpeg"
+              alt="Working on laptop"
+              className="rounded-lg shadow-2xl w-full h-full object-cover"
               />
-            </motion.div>
+              </motion.div>
             <motion.div 
               className="absolute top-4 left-4 w-full h-full bg-blue-500/20 rounded-lg -z-10"
               animate={{

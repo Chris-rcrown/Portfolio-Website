@@ -140,7 +140,7 @@ const Hero = () => {
               whileTap={{ scale: 0.95 }}
             >
               <motion.img
-                src="/post2.jpg"
+                src="/heroshot.png"
                 alt="Profile"
                 className="w-35 h-40  rounded-full object-contain"
                 whileHover={{ scale: 1.05 }}

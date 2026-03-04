@@ -109,7 +109,7 @@ const Header: React.FC = () => {
           {/* Social Links */}
           <div className="hidden md:flex items-center space-x-4">
             {[
-              { icon: Github, url: 'https://github.com', name: 'GitHub' },
+              { icon: Github, url: 'https://github.com/chris-rcrown', name: 'GitHub' },
               { icon: Linkedin, url: 'https://linkedin.com', name: 'LinkedIn' },
               { icon: Instagram, url: 'https://instagram.com', name: 'Instagram' }
             ].map((social, index) => (
@@ -191,7 +191,7 @@ const Header: React.FC = () => {
                   variants={itemVariants}
                 >
                   {[
-                    { icon: Github, url: 'https://github.com', name: 'GitHub' },
+                    { icon: Github, url: 'https://github.com/chris-rcrown', name: 'GitHub' },
                     { icon: Linkedin, url: 'https://linkedin.com', name: 'LinkedIn' },
                     { icon: Instagram, url: 'https://instagram.com', name: 'Instagram' }
                   ].map((social) => (

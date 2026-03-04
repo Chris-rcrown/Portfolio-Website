@@ -105,9 +105,9 @@ export const projects: Project[] = [
     title: 'TEHC Personal Banking App',
     description: 'A personal banking app that allows users to manage their finances, view transaction history, and perform basic banking operations.',
     image: '/tehc.jpeg',
-    technologies: ['React', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'AzureDevOps', 'Zustand', 'RESTful API'],
+    technologies: ['React', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'Asp.NetCore (C#)','AzureDevOps', 'Zustand', 'RESTful API'],
     liveUrl: 'https://persbankingapp-dev-awarc2cwdth8esds.westeurope-01.azurewebsites.net/',
-    githubUrl: ' ',
+    githubUrl: 'private',
     featured: true
   },
   {
@@ -117,7 +117,28 @@ export const projects: Project[] = [
     image: '/inkbrick.png',
     technologies: ['React','TypeScript', 'Node.js', 'Express', 'Render', 'PostgreSQL', 'Cloudinary', 'Tailwind CSS', 'Swagger/OpenAPI'],
     liveUrl: 'https://inkbric-full-custom.vercel.app/',
-    githubUrl: '',
+    githubUrl: 'private',
     featured: true
+  },
+  {
+    id: 12,
+    title: 'Louisville Eko Atlantic',
+    description: " Louisville Residential Tower is a luxury property/mortgage site built with Vite + React/Typescript.it's core features includes Browse available apartments and a public marketplace with filters for bedrooms, view, price, search and sorting.View individual property detail pages with gallery, walkthrough, floorplan, and payment‑plan/milestones.",
+    image : '/louisville.png',
+    technologies: ['React', 'Typescript', 'Nest.js', 'PostgreSQL', 'Cloudinary', 'Tailwind CSS', 'Tanstack Query', 'Zustand', 'Zod', 'CI/CD Pipelines'],
+    liveUrl : 'https://marketplace.louisville.tehcoop.com',
+    githubUrl: 'private',
+    featured: true,
+  },
+  {
+    id: 13,
+    title: 'ACUOP',
+    description: 'ACUOP; Atlantic City Union Cooperative',
+    image: "/Acuop.png",
+    technologies: ['React', 'Typescript','PostgreSQL', 'Cloudinary', 'Tailwind CSS', 'Tanstack Query', 'Zustand', 'Zod', 'CI/CD Pipelines'],
+    liveUrl: 'https://acuop.com',
+    githubUrl: 'private',
+    featured: true,
   }
+
 ];
