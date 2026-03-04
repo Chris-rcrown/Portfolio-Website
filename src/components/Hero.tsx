@@ -175,7 +175,7 @@ const Hero = () => {
             variants={itemVariants}
           >
             Passionate about creating beautiful, functional web experiences. 
-            Currently transitioning from frontend to full-stack development with expertise in modern technologies.
+            Started out as a frontend developer, transitioned into full-stack development with expertise in modern technologies.
           </motion.p>
 
           <motion.div 
